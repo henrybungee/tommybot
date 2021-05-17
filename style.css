@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
 	background-image: url("https://wallpaperaccess.com/full/3053366.png");
@@ -17,8 +18,8 @@ body {
 }
 
 .fancy-button {
+	box-shadow: 0 0 25px #4CAF50, 0 0 5px #4CAF50;
 	border-radius: 4px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	font-family: 'Rubik', sans-serif;
   background-color: #4CAF50; /* Green */
   border: none;
@@ -36,7 +37,7 @@ body {
 	border-radius: 4px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	font-family: 'Rubik', sans-serif;
-  border: solid 1px;
+  border: solid 1px white;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -47,25 +48,47 @@ body {
 
 }
 
+.fancy-button-suggest {
+	margin-left:30px;
+	background-image: linear-gradient(to right, rgb(255, 0, 106) , rgb(0, 132, 255));
+	border-radius: 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-family: 'Rubik', sans-serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+	transition: 0.3s;
+}
+
+.fancy-button-suggest:hover {
+	color:white;	
+	box-shadow: 0 4px 8px black;
+}
+
 .fancy-button:hover {
 	  background-color: rgb(75, 194, 105);
+		color: white;
+		cursor: pointer;
 }
 
 .fancy-button-other:hover {
-	  background-color: rgb(165, 167, 165);
+		color:black;
+	  background-color: rgb(255, 255, 255);
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius: 4px;
   background-color: #333;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -139,7 +162,7 @@ h1 {
 p {
 	text-align: center;
 	color: white;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .center {
@@ -158,13 +181,13 @@ h2 {
 }
 
 strong {
-	color: rgb(145, 1, 1);
+	color: #4CAF50;
 }
 
 .features-nav {
 	text-align: center;
 	color: white;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	list-style: none;
 	font-size: 30px;
 }
@@ -182,6 +205,19 @@ strong {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 2%;
+	transition: 0.3s;
+	/*padding: 8px;*/
+}
+
+
+.help-box {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 60%;
+	background-color: rgb(78, 78, 78);
+	border-radius: 4px;
+	margin-top: 2%;
+	margin-left:1.5%;
+	margin-right:1.5%;
 	/*padding: 8px;*/
 }
 
@@ -196,13 +232,13 @@ strong {
 	width:10%;
 	height:10%; 
 	padding-left: 10px; 
-	padding-top: 36px; 
-	padding-right: 5px;
+	padding-top: 30px; 
+	padding-right: 10px;
 }
 
 .dark-grey-container {
 	background-color: rgb(29, 28, 28);
-	height: 100%;
+	height: 750px;
 }
 
 .explanation-text {
@@ -220,4 +256,70 @@ strong {
 	border-radius: 4px;
 	font-size: 20px; 
 	font-family: monospace;
+}
+
+.bot-invite-div {
+	margin-bottom:0;
+	background-image: linear-gradient(to right, rgb(0, 132, 255) , rgb(0, 255, 64));
+}
+
+a {
+	text-decoration: none;
+	color: grey;
+	transition: 0.3s;
+}
+
+a:hover{
+	color: #4CAF50;
+}
+
+img {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.security-container {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: auto;
+	/*margin-top: 40px;*/
+	margin-left: 35%;
+}	
+
+.help-title {
+	font-family: 'Oswald', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.help-text {
+	text-align: center;
+	font-size:18px;
+}
+
+.help-link {
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.help-title a:hover {
+	color:#4CAF50;
+	font-size:32px;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  color: white;
+	margin-bottom:15px;
+	padding-bottom: 1px;
+}
+
+.description-text {
+	margin-left:15px;
+	margin-right:50%;
 }
