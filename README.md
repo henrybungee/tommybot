@@ -1,2 +1,2 @@
 # TommyBot Website
-Website for tommybot
+Website for tommybot. This website is being hosted with Github pages. Thanks Github, very cool. Anyways, this is the website for TommyBot. This is the source code. So far there is nothing confidential in the code, but when confidential code is added, This will have to change.
