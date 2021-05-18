@@ -15,6 +15,7 @@ body {
 	text-shadow: 2px 2px 5px #535353;
 	font-family: 'Oswald', sans-serif;
 	font-size: 50px;
+	margin-bottom:20px;
 }
 
 .fancy-button {
@@ -117,7 +118,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Set a specific height */
-  height: 50%;
+  height: 700px;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -131,10 +132,11 @@ body, html {
 	font-family: 'Work Sans' sans-serif;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+	margin-bottom:50px;
 }
 
 .parallax {
