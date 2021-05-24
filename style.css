@@ -132,11 +132,11 @@ body, html {
 	font-family: 'Work Sans' sans-serif;
   text-align: center;
   position: absolute;
-  margin-top: 15%;
+	margin-top: 20vw;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-	margin-bottom:15%;
+	margin-bottom:50px;
 }
 
 .parallax {
